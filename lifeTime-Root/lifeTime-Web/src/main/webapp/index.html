@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Insert title here</title>
+
+        <script type="text/javascript">
+			$(document).ready(function() {
+                function random() {
+                    $.ajax({
+                        url: 'demo/city',
+                        dataType: 'json',
+                        contentType : "application/json",
+                        type: 'GET',
+                        success: function (response) {
+                            alert(JSON.stringify(response));
+                        },
+                        error:function(response){
+                        	alert(response)
+                        }
+                    }); 
+                }
+                                
+                $("#random").click(function(){
+                	random(); 
+                 });
+			});
+        </script>
+
+    </head>
+    <body>
+        Random
+        <br/>
+        <input type="button" name="random" value="Random" id="random"/>
+        <br/>
+    </body>
+</html>

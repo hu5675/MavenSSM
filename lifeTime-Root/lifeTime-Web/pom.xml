@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.mars</groupId>
+		<artifactId>lifeTime-Root</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.mars.web</groupId>
+	<artifactId>lifeTime-Web</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>lifeTime-Web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<build>
+		<finalName>lifeTime-Web</finalName>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.mars.model</groupId>
+			<artifactId>lifeTime-Model</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mars.utils</groupId>
+			<artifactId>lifeTime-Utils</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mars.persistent</groupId>
+			<artifactId>lifeTime-Persistent</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mars.interceptor</groupId>
+			<artifactId>lifeTime-Interceptor</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mars.core</groupId>
+			<artifactId>lifeTime-Core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mars.controller</groupId>
+			<artifactId>lifeTime-Controller</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+</project>

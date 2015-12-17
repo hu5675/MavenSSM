@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mars.dao.CityDao">
+	<resultMap id="cityResultMap" type="com.mars.models.CityModel">
+		<result column="ID" property="ID" jdbcType="INTEGER" />
+		<result column="Name" property="Name" jdbcType="NVARCHAR" />
+		<result column="CountryCode" property="CountryCode" jdbcType="NVARCHAR" />
+		<result column="District" property="District" jdbcType="NVARCHAR" />
+		<result column="Population" property="Population" jdbcType="INTEGER" />
+	</resultMap>
+	
+	<sql id="City_Column_List">
+		ID,Name,CountryCode,District,Population
+	</sql>
+
+	<select id="selectCity" resultType="com.mars.models.CityModel">
+		select ID,Name,CountryCode,District,Population from city where ID = 2
+	</select>
+</mapper>

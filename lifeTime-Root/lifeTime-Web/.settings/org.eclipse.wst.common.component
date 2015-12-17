@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="lifeTime-Web">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="lifeTime-Model-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lifeTime-Model/lifeTime-Model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lifeTime-Utils-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lifeTime-Utils/lifeTime-Utils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lifeTime-Persistent-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lifeTime-Persistent/lifeTime-Persistent">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lifeTime-Interceptor-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lifeTime-Interceptor/lifeTime-Interceptor">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lifeTime-Core-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lifeTime-Core/lifeTime-Core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lifeTime-Controller-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lifeTime-Controller/lifeTime-Controller">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/lifeTime-Web/target/classes"/>
+        <property name="context-root" value="lifeTime-Web"/>
+    </wb-module>
+</project-modules>
